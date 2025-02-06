@@ -1,14 +1,14 @@
 import Image from 'next/image';
-
-export const Component = () => {
-  return <div></div>;
-};
+import Select from '@/app/components/Select';
 
 export default function Home() {
   return (
     <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-20">
       <main className="flex1 row-start-2 flex-col items-center gap-8 sm:items-start">
         <Image className="dark:invert" src="/next.svg" alt="Next.js logo" width={180} height={38} priority />
+        <div className="m-4">
+          <Select />
+        </div>
         <ol className="list-inside list-decimal text-center font-[family-name:var(--font-geist-mono)] text-sm sm:text-left">
           <li className="mb-2">
             Get started by editing{''}

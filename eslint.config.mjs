@@ -13,8 +13,11 @@ const eslintConfig = [
   ...compat.config({
     extends: ['next/core-web-vitals', 'next/typescript', 'prettier'],
     rules: {
-      // make quotes single quotes
       quotes: ['error', 'single'],
+      'import/no-default-export': 'off',
+      'import/no-anonymous-default-export': 'warn',
+      '@next/next/no-html-link-for-pages': 'error',
+      'import/no-duplicates': 'error',
     },
   }),
 ];

@@ -1,7 +1,10 @@
+// about page with react aria components example
+
+import React from 'react';
 import Image from 'next/image';
 import Select from '@/app/components/Select';
 
-export default function Home() {
+export default function About() {
   return (
     <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-20">
       <main className="flex1 row-start-2 flex-col items-center gap-8 sm:items-start">
@@ -40,6 +43,7 @@ export default function Home() {
           </a>
         </div>
       </main>
+
       <footer className="row-start-3 flex flex-wrap items-center justify-center gap-6">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -58,20 +62,6 @@ export default function Home() {
         >
           <Image aria-hidden src="/window.svg" alt="Window icon" width={16} height={16} />
           Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image aria-hidden src="/globe.svg" alt="Globe icon" width={16} height={16} />
-          Go to nextjs.org →
-        </a>
-        {/* link to about page */}
-        <a className="flex items-center gap-2 hover:underline hover:underline-offset-4" href="/about">
-          <Image aria-hidden src="/globe.svg" alt="Globe icon" width={16} height={16} />
-          Go to about page
         </a>
       </footer>
     </div>
